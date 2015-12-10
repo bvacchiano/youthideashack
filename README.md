@@ -16,16 +16,27 @@ The data inserted and submitted via the tip.chicagopolice.org website is sent (P
 ## Retrieiving data from tip.chicagopolice.org using the CLEARPath API
 To get started accessing the tip.chicagopolice.org API, lets retrieve (GET) data from the source using the REST API (CLEARPath API):
 
-1. Speak to a youthideashack representative to retrieve a *ClEARPath API Token*. You will need this token to use the CLEARPath API. Think of it as a key to a locked house - you can't enter or leave the house without the key. The house in our case will be the data source (or database) that the [CLEARPath API](http://api1.chicagopolice.org/clearpath/) uses and the key is the *CLEARPath API Token*
-2. Follow the Mac / PC questions below.
+1. Open chrome/safari/firefox/internet explorer
+2. Navigate to [http://api1.chicagopolice.org/clearpath/api/1.0/crimes/list/?type=BATTERY](http://api1.chicagopolice.org/clearpath/api/1.0/crimes/list/?type=BATTERY)
+3. View all crimes that contain the word "Arson" in the primary field.
 
-### Mac (or Powershell on PC)
-1. Open the Terminal application
+### Understanding format of data from CLEARPath API
+The data being returned from the CLEARPath API is formatted in a language called `JSON`. `JSON` is 
 
-### PC
-1. Download Powershell
-2. Open powershell
+### Viewing more data from CLEARPath API
+There are many other pieces of data that you can view from the CLEARPath API. If you view the CLEARPath API documentation, you can see some of the other functions that you can use to retrieve (GET) data from the CLEARPath API's database. Below are some examples:
+
+1. 
+2. 
+3. 
 
 
 ## Sending data to tip.chicagopolice.org using the CLEARPath API
-To send (POST) data to the tip.chicagopolice.org data source using the CLEARPath API we'll need to set up a simple server. This will allow us to safely and securely access the database and add information to it. Unlike the 
+To send (POST) data to the tip.chicagopolice.org data source using the CLEARPath API we'll need user our computer's terminal/command prompt. This will allow us to safely and securely access the database and add information to the data source. Unlike the get calls, we unfortunately cannot send data to the database using our web browser and a url. 
+
+Below are the steps to send (POST) data to the tip.chicagpolice.org database:
+1. 
+
+
+# Challenge
+Think about how you can use the CLEARPath API to make a website/web application which helps the community around you! For a start - I have included a simple starter application that allows you to access the data from the tip.chicagopolice.org/CLEARPath API database and send data to the database.
