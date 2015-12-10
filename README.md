@@ -21,7 +21,14 @@ To get started accessing the tip.chicagopolice.org API, lets retrieve (GET) data
 3. View all crimes that contain the word "Arson" in the primary field.
 
 ### Understanding format of data from CLEARPath API
-The data being returned from the CLEARPath API is formatted in a language called `JSON`. `JSON` is 
+The data being returned from the CLEARPath API is formatted in a language called `JSON`. `JSON` is short for *Javascript Object Notation*. `JSON` is language used to store information in an organized, easy-to-access manner. It gives a human readable collection of data from a database that we can access in a logical manner using a web browser or web application. 
+
+All the data stored inside of `{}` are called "objects" an "object" represents a row of data stored inside of a database. Each line inside of the object represents a column of data with a title and description.
+```
+{
+	"title":"description"
+} //object
+```
 
 ### Viewing more data from CLEARPath API
 There are many other pieces of data that you can view from the CLEARPath API. If you view the CLEARPath API documentation, you can see some of the other functions that you can use to retrieve (GET) data from the CLEARPath API's database. Below are some examples:
@@ -35,7 +42,9 @@ There are many other pieces of data that you can view from the CLEARPath API. If
 To send (POST) data to the tip.chicagopolice.org data source using the CLEARPath API we'll need user our computer's terminal/command prompt. This will allow us to safely and securely access the database and add information to the data source. Unlike the get calls, we unfortunately cannot send data to the database using our web browser and a url. 
 
 Below are the steps to send (POST) data to the tip.chicagpolice.org database:
-1. 
+
+1. Open a terminal (Mac) or Command Prompt (PC)
+2. Type "curl "
 
 
 # Challenge
