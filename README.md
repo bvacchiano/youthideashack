@@ -17,8 +17,8 @@ The data inserted and submitted via the tip.chicagopolice.org website is sent (P
 To get started accessing the tip.chicagopolice.org API, lets retrieve (GET) data from the source using the REST API (CLEARPath API):
 
 1. Open chrome/safari/firefox/internet explorer
-2. Navigate to [http://api1.chicagopolice.org/clearpath/api/1.0/crimes/list/?type=BATTERY](http://api1.chicagopolice.org/clearpath/api/1.0/crimes/list/?type=BATTERY)
-3. View all crimes that contain the word "Arson" in the primary field.
+2. Navigate to [http://api1.chicagopolice.org/clearpath/api/1.0/tips?concernId=50029&pinNumber=FLP6AVS](http://api1.chicagopolice.org/clearpath/api/1.0/tips?concernId=50029&pinNumber=FLP6AVS)
+3. View a tip that was previously submitted
 
 ### Understanding format of data retrieved from CLEARPath API
 The data being returned from the CLEARPath API is formatted in a language called `JSON`. `JSON` is short for *Javascript Object Notation*. `JSON` is language used to store information in an organized, easy-to-access manner. It gives a human readable collection of data from a database that we can access in a logical manner using a web browser or web application. 
@@ -30,10 +30,9 @@ You can think of all of the infromation stored inside of the `[]` symbol as a da
 		"title":"description"
 	} //object or row
 ] //array or database
-
 ```
 
-### Viewing more data from CLEARPath API
+### Retrieving (GET) more data from CLEARPath API
 There are many other pieces of data that you can view from the CLEARPath API. If you view the CLEARPath API documentation, you can see some of the other functions that you can use to retrieve (GET) data from the CLEARPath API's database. The information that you can retrieve from the CLEARPath API goes beyond tip submissions. Below are some examples:
 
 1. [List Of All Community Events](http://api1.chicagopolice.org/clearpath/api/1.0/communityCalendar/events)
