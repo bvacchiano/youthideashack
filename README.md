@@ -13,7 +13,7 @@ An *API* is a Application Program Interface. It is a set of internet protocols, 
 The data inserted and submitted via the tip.chicagopolice.org website is sent (POST) to the data source by the REST API. The REST API used by the [tip.chicagopolice.org](http://tip.chicagopolice.org) website is called the ["CLEARPath API"](http://api1.chicagopolice.org/clearpath/).
 
 ## Retrieiving (GET) data from tip.chicagopolice.org using the [CLEARPath API](http://api1.chicagopolice.org/clearpath/)
-To get started accessing data submitted to the [tip.chicagopolice.org](http://tip.chicagopolice.org) website, lets retrieve (GET) data from the website's database using the website's associated REST API ([CLEARPath API](http://api1.chicagopolice.org/clearpath/)):
+To get started accessing data submitted to the [tip.chicagopolice.org](http://tip.chicagopolice.org) website, lets retrieve (GET) data from the website's database using the website's associated REST API (called the [CLEARPath API](http://api1.chicagopolice.org/clearpath/)):
 
 1. Open chrome/safari/firefox/internet explorer
 2. Navigate to [http://api1.chicagopolice.org/clearpath/api/1.0/tips?concernId=50029&pinNumber=FLP6AVS](http://api1.chicagopolice.org/clearpath/api/1.0/tips?concernId=50029&pinNumber=FLP6AVS)
@@ -53,7 +53,7 @@ Below are the steps to send (POST) a tip to the tip.chicagpolice.org database:
 	curl --data "apiToken=INSERTAPITOKENHERE&recurringEvent=yes" http://api1.chicagopolice.org/clearpath/api/1.0/tips
 ```
 
-### Fixing a common curl error
+### Fixing a common cURL error
 If you get a curl error `A positional parameter cannot be found that accepts argument`, an easy way to combat that error is to ensure that the correct version of curl is being used in your terminal/command prompt. To do so, type and execute `Remove-item alias:curl` in your terminal/command prompt.
 
 
