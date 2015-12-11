@@ -20,14 +20,17 @@ To get started accessing the tip.chicagopolice.org API, lets retrieve (GET) data
 2. Navigate to [http://api1.chicagopolice.org/clearpath/api/1.0/crimes/list/?type=BATTERY](http://api1.chicagopolice.org/clearpath/api/1.0/crimes/list/?type=BATTERY)
 3. View all crimes that contain the word "Arson" in the primary field.
 
-### Understanding format of data from CLEARPath API
+### Understanding format of data retrieved from CLEARPath API
 The data being returned from the CLEARPath API is formatted in a language called `JSON`. `JSON` is short for *Javascript Object Notation*. `JSON` is language used to store information in an organized, easy-to-access manner. It gives a human readable collection of data from a database that we can access in a logical manner using a web browser or web application. 
 
-All the data stored inside of `{}` are called "objects" an "object" represents a row of data stored inside of a database. Each line inside of the object represents a column of data with a title and description.
+You can think of all of the infromation stored inside of the `[]` symbol as a database. The `[]` symbol is called an "array". Inside of the "array", there are small collections of data. These small collections, stored inside of `{}` symbols, are called "objects". An "object" represents a row of data stored inside of a database. Each line inside of the object represents a column of data with a title and description.
 ```
-{
-	"title":"description"
-} //object
+[
+	{
+		"title":"description"
+	} //object or row
+] //array or database
+
 ```
 
 ### Viewing more data from CLEARPath API
