@@ -39,7 +39,7 @@ There are many other pieces of data that you can view from the CLEARPath API. If
 2. [List Of All Crimes](http://api1.chicagopolice.org/clearpath/api/1.0/crimes/list)
 3. [All Major Crimes](http://api1.chicagopolice.org/clearpath/api/1.0/crimes/major)  (**NOTE**: This might take awhile to load)
 
-**You can read about all of the other types of data you can retrieve (GET) on the** ["CLEARPath API Documentation"](http://http://api1.chicagopolice.org/clearpath/documentation/index) **site**
+**You can read about all of the other types of data you can retrieve (GET) on the** [CLEARPath API Documentation](http://http://api1.chicagopolice.org/clearpath/documentation/index) **site**
 
 
 ## Sending data to tip.chicagopolice.org using the CLEARPath API
@@ -53,7 +53,11 @@ Below are the steps to send (POST) a tip to the tip.chicagpolice.org database:
 ```
 	curl --data "apiToken=INSERTAPITOKENHERE&recurringEvent=yes" http://api1.chicagopolice.org/clearpath/api/1.0/tips
 ```
-4. There are other types of parameters that you can add to the 3rd argument of the command above to submit more information to your tip. Please review the "Create Crime Tip" section of the ["CLEARPath API Documentation"](http://http://api1.chicagopolice.org/clearpath/documentation/index) to see other parameters you can add. To add more parameters, simply add a `&` to the end of the 3rd argument in between `""`, type the parameter name and an `=` sign, then add the value of the parameter. For example ```"apiToken=INSERTAPITOKENHERE&recurringEvent=yes&whatHappenedDetails=I saw a bad guy"```
+
+### Adding even more data to a tip
+There are other types of parameters that you can add to the 3rd argument of the command above to submit more information to your tip. Please review the "Create Crime Tip" section of the [CLEARPath API Documentation](http://http://api1.chicagopolice.org/clearpath/documentation/index) to see other parameters you can add. 
+
+To add more parameters, simply add a `&` to the end of the 3rd argument in between `""`, type the parameter name and an `=` sign, then add the value of the parameter. For example ```"apiToken=INSERTAPITOKENHERE&recurringEvent=yes&whatHappenedDetails=I saw a bad guy"```
 
 
 # Challenge
