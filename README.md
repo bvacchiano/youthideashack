@@ -34,11 +34,13 @@ You can think of all of the infromation stored inside of the `[]` symbol as a da
 ```
 
 ### Viewing more data from CLEARPath API
-There are many other pieces of data that you can view from the CLEARPath API. If you view the CLEARPath API documentation, you can see some of the other functions that you can use to retrieve (GET) data from the CLEARPath API's database. Below are some examples:
+There are many other pieces of data that you can view from the CLEARPath API. If you view the CLEARPath API documentation, you can see some of the other functions that you can use to retrieve (GET) data from the CLEARPath API's database. The information that you can retrieve from the CLEARPath API goes beyond tip submissions. Below are some examples:
 
 1. [List Of All Community Events](http://api1.chicagopolice.org/clearpath/api/1.0/communityCalendar/events)
 2. [List Of All Crimes](http://api1.chicagopolice.org/clearpath/api/1.0/crimes/list)
 3. [All Major Crimes](http://api1.chicagopolice.org/clearpath/api/1.0/crimes/major)  (**NOTE**: This might take awhile to load)
+
+**You can read about all of the other types of data you can retrieve (GET) on the** ["CLEARPath API Documentation"](http://http://api1.chicagopolice.org/clearpath/documentation/index) **site**
 
 
 ## Sending data to tip.chicagopolice.org using the CLEARPath API
