@@ -47,11 +47,15 @@ To send (POST) data to the tip.chicagopolice.org data source using the CLEARPath
 Below are the steps to send (POST) a tip to the tip.chicagpolice.org database:
 
 1. Retrieve an API Token from a Chicago Police employee or a Youth Ideas Hack volunteer
-2. Open a terminal (Mac) or Command Prompt (PC)
+2. Open a terminal (Mac) or Command Prompt (PC). **NOTE:** If using a Command Prompt (PC), you'll need to download and install cURL [here](http://curl.haxx.se/download.html).
 3. Type in the terminal/command prompt
 ```
 	curl --data "apiToken=INSERTAPITOKENHERE&recurringEvent=yes" http://api1.chicagopolice.org/clearpath/api/1.0/tips
 ```
+
+### Fixing a common curl error
+If you get a curl error `A positional parameter cannot be found that accepts argument`, an easy way to combat that error is to ensure that the correct version of curl is being used in your terminal/command prompt. To do so, type `Remove-item alias:curl` in your terminal/command prompt.
+
 
 ### Adding even more data to a tip
 There are other types of parameters that you can add to the 3rd argument of the command above to submit more information to your tip. Please review the "Create Crime Tip" section of the [CLEARPath API Documentation](http://http://api1.chicagopolice.org/clearpath/documentation/index) to see other parameters you can add. 
