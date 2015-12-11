@@ -44,10 +44,12 @@ There are many other pieces of data that you can view from the CLEARPath API. If
 ## Sending data to tip.chicagopolice.org using the CLEARPath API
 To send (POST) data to the tip.chicagopolice.org data source using the CLEARPath API we'll need user our computer's terminal/command prompt. This will allow us to safely and securely access the database and add information to the data source. Unlike the get calls, we unfortunately cannot send data to the database using our web browser and a url. 
 
-Below are the steps to send (POST) data to the tip.chicagpolice.org database:
+Below are the steps to send (POST) a tip to the tip.chicagpolice.org database:
 
-1. Open a terminal (Mac) or Command Prompt (PC)
-2. Type "curl "
+1. Retrieve an API Token from a Chicago Police employee or a Youth Ideas Hack volunteer
+2. Open a terminal (Mac) or Command Prompt (PC)
+3. Type ```curl --data "apiToken=INSERTAPITOKENHERE&recurringEvent=yes" http://api1.chicagopolice.org/clearpath/api/1.0/tips```
+4. There are other types of parameters that you can add to the 3rd argument of the command above to submit more information to your tip. Please review the "Create Crime Tip" section of the ["CLEARPath API Documentation"](http://http://api1.chicagopolice.org/clearpath/documentation/index) to see other parameters you can add. To add more parameters, simply add a `&` to the end of the 3rd argument in between `""`, type the parameter name and an `=` sign, then add the value of the parameter. For example ```"apiToken=INSERTAPITOKENHERE&recurringEvent=yes&whatHappenedDetails=I saw a bad guy"```
 
 
 # Challenge
