@@ -82,7 +82,7 @@ Think about how you can use the CLEARPath API to make a website/web application 
 9. Navigate to website `http://localhost:8080/index.html` using Safari/Firefox/Chrome
 10. View the sample web app :) The index.html page will display data retrieved (GET) from the CLEARPath API.
 
-**NOTE 1:** There is a sample website which allows you to send (POST) data to the database using the CLEARPath API. See if you can figure out how to read the code in the post.html file, add your API Token to the file, and post data to the server! *Hint: navigate to `http://localhost:8080/post.html` to figure out how*
+**NOTE:** There is a sample website which allows you to send (POST) data to the database using the CLEARPath API. See if you can figure out how to read the code in the post.html file, add your API Token to the file, and post data to the server! *Hint: navigate to `http://localhost:8080/post.html` to see a POST webpage*
 
 ### PC
 1. Download Mongoose to the directory in which you saved the "youthideashack" project above
