@@ -13,7 +13,7 @@ An *API* is a Application Program Interface. It is a set of internet protocols, 
 The data inserted and submitted via the tip.chicagopolice.org website is sent (POST) to the data source by the REST API. The REST API used by the [tip.chicagopolice.org](http://tip.chicagopolice.org) website is called the ["CLEARPath API"](http://api1.chicagopolice.org/clearpath/).
 
 ## Retrieiving data from tip.chicagopolice.org using the CLEARPath API
-To get started accessing the tip.chicagopolice.org API, lets retrieve (GET) data from the source using the REST API (CLEARPath API):
+To get started accessing the tip.chicagopolice.org API, lets retrieve (GET) data from the source using the REST API ([CLEARPath API](http://api1.chicagopolice.org/clearpath/)):
 
 1. Open chrome/safari/firefox/internet explorer
 2. Navigate to [http://api1.chicagopolice.org/clearpath/api/1.0/tips?concernId=50029&pinNumber=FLP6AVS](http://api1.chicagopolice.org/clearpath/api/1.0/tips?concernId=50029&pinNumber=FLP6AVS)
