@@ -1,5 +1,4 @@
 # Youth Ideas Hack - Chicago Police Department
-Simple webserver for running the https://tip.chicagopolice.org/ api (with directions)
 
 # Getting Started
 ## What is an API?
