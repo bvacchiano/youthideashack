@@ -12,8 +12,8 @@ An *API* is a Application Program Interface. It is a set of internet protocols, 
 
 The data inserted and submitted via the tip.chicagopolice.org website is sent (POST) to the data source by the REST API. The REST API used by the [tip.chicagopolice.org](http://tip.chicagopolice.org) website is called the ["CLEARPath API"](http://api1.chicagopolice.org/clearpath/).
 
-## Retrieiving data from tip.chicagopolice.org using the CLEARPath API
-To get started accessing the tip.chicagopolice.org API, lets retrieve (GET) data from the source using the REST API ([CLEARPath API](http://api1.chicagopolice.org/clearpath/)):
+## Retrieiving (GET) data from tip.chicagopolice.org using the [CLEARPath API](http://api1.chicagopolice.org/clearpath/)
+To get started accessing data submitted to the [tip.chicagopolice.org](http://tip.chicagopolice.org) website, lets retrieve (GET) data from the website's database using the website's associated REST API ([CLEARPath API](http://api1.chicagopolice.org/clearpath/)):
 
 1. Open chrome/safari/firefox/internet explorer
 2. Navigate to [http://api1.chicagopolice.org/clearpath/api/1.0/tips?concernId=50029&pinNumber=FLP6AVS](http://api1.chicagopolice.org/clearpath/api/1.0/tips?concernId=50029&pinNumber=FLP6AVS)
@@ -31,7 +31,7 @@ You can think of all of the infromation stored inside of the `[]` symbol as a da
 ] //array or database
 ```
 
-### Retrieving (GET) more data from CLEARPath API
+### Retrieving (GET) other data from CLEARPath API
 There are many other pieces of data that you can view from the CLEARPath API. If you view the CLEARPath API documentation, you can see some of the other functions that you can use to retrieve (GET) data from the CLEARPath API's database. The information that you can retrieve from the CLEARPath API goes beyond tip submissions. Below are some examples:
 
 1. [List Of All Community Events](http://api1.chicagopolice.org/clearpath/api/1.0/communityCalendar/events)
