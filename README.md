@@ -71,7 +71,13 @@ Think about how you can use the CLEARPath API to make a website/web application 
 
 
 ### Mac
-1. Download [NodeJS](https://nodejs.org/dist/v4.2.3/node-v4.2.3.pkg) to your machine
+1. Download [NodeJS](https://nodejs.org/en/download/) to your machine's Desktop
+2. Open terminal and run command `sudo npm install npm -g`. This will download a package manager that allows you to easily run a simple server. The simple server will help you execute a post command from your local machine / from the web application in the "youthideashack" project.
+3. Download the simple server package ([http-server](https://www.npmjs.com/package/http-server)) by executing the command `npm install http-server -g`
+4. Navigate to cd ~/Desktop/youthideashack and run command `jitsu install http-server`
+5. Run command `node bin/http-server`
+6. Navigate to `http://localhost:8080` using Safari/Firefox/Chrome
+7. View the sample web app :) 
 
 ### PC
 1. Download Mongoose to the directory in which you saved the "youthideashack" project above
