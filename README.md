@@ -38,7 +38,7 @@ There are many other pieces of data that you can view from the CLEARPath API. If
 
 1. [List Of All Community Events](http://api1.chicagopolice.org/clearpath/api/1.0/communityCalendar/events)
 2. [List Of All Crimes](http://api1.chicagopolice.org/clearpath/api/1.0/crimes/list)
-3. [All Major Crimes](http://api1.chicagopolice.org/clearpath/api/1.0/crimes/major)  **NOTE**: This might take awhile to load
+3. [All Major Crimes](http://api1.chicagopolice.org/clearpath/api/1.0/crimes/major)  (**NOTE**: This might take awhile to load)
 
 
 ## Sending data to tip.chicagopolice.org using the CLEARPath API
