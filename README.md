@@ -74,10 +74,15 @@ Think about how you can use the CLEARPath API to make a website/web application 
 1. Download [NodeJS](https://nodejs.org/en/download/) to your machine's Desktop
 2. Open terminal and run command `sudo npm install npm -g`. This will download a package manager that allows you to easily run a simple server. The simple server will help you execute a post command from your local machine / from the web application in the "youthideashack" project.
 3. Download the simple server package ([http-server](https://www.npmjs.com/package/http-server)) by executing the command `npm install http-server -g`
-4. Navigate to cd ~/Desktop/youthideashack and run command `jitsu install http-server`
-5. Run command `node bin/http-server`
-6. Navigate to `http://localhost:8080` using Safari/Firefox/Chrome
-7. View the sample web app :) 
+4. Download Jitsu using command `npm install jitsu -g`
+5. Navigate to cd `~/Desktop/youthideashack` in your terminal using command `cd ~/Desktop/youthideashack`. Then run command `jitsu install http-server`
+6. Open up a file browser and copy contents (index.html, /js, and post.html) of the "youthideashack" project into the `http-server/public` folder. Make sure to replace index.html with your the index.html file from the youthideashack project.
+7. In the terminal, run command `cd http-server`
+7. Run command `node bin/http-server` from terminal
+8. Navigate to website `http://localhost:8080/index.html` using Safari/Firefox/Chrome
+9. View the sample web app :) The index.html page will display data retrieved (GET) from the CLEARPath API.
+
+**NOTE 1:** There is a sample website which allows you to send (POST) data to the database using the CLEARPath API. See if you can figure out how to read the code in the post.html file, add your API Token to the file, and post data to the server! *Hint: navigate to `http://localhost:8080/post.html` to figure out how*
 
 ### PC
 1. Download Mongoose to the directory in which you saved the "youthideashack" project above
