@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>ClearPath API - JavaScript Example</title>
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+	// Configuration //
+	var apiRoot = "http://api1.chicagopolice.org/clearpath/api/1.0";
+	var apiPath = "/mostWanted/list";
+	var apiRequestUrl = (apiRoot + apiPath); // Full Url
+	
+	// Display & Format Data //
+	function displayData(data) {
+		var row = {};
+		$.each(data, function(index, row) {
+			var displayText = row.offenderName + " - Age: " + row.age + " - Height: " + row.height + " - Weight: " + row.weight;
+			
+			var displayRowHtml = $("<span>");
+			displayRowHtml.text(displayText);
+			
+			$("#output")
+				.append(displayRowHtml)
+				.append("<br/>");
+		});
+	}
+	
+	// Fetch Data (on load) //
+	$(document).ready(function() {
+		$("#messages").html("<span><i>Loading data...</i></span>");
+	
+		// perform web request (GET)
+		$.getJSON(apiRequestUrl, {}, function(data) {
+			if (data) {
+				displayData(data);
+			}
+		})
+		.done(function() {
+			$("#messages").html("<span><i>Successfully fetched data!</i></span>");
+		})
+		.fail(function(jqXHR, textStatus, errorThrown) {
+			$("#messages").html("<span style=\"color: red;\"><b>ERROR:</b> An error has occurred while processing the request.<br/><br/>(" + textStatus + ") " + jqXHR.status + " " +  jqXHR.responseText + " " + errorThrown + "</br><br/><i>(Please follow instructions in 'HOW_TO.txt' or debug via JavaScript Messages Console)</i></span>");
+		});
+	});
+	</script>
+</head>
+<body>
+
+<!-- Status of requests -->
+<div id="messages" style="margin-bottom:20px;"></div>
+
+<!-- Data is displayed inside of the "#output" HTML element -->
+<div id="output"></div>
+
+</body>
+</html>

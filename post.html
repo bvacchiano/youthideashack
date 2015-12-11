@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title>ClearPath API - JavaScript Example (POST)</title>
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+	// Configuration //
+	var apiRoot = "http://api1.chicagopolice.org/clearpath/api/1.0";
+	var apiPath = "/tips";
+	var apiRequestUrl = (apiRoot + apiPath); // Full Url
+	
+	var apiRequestParameters = {
+		apiToken: "", // <-- insert API token at this line!
+		//iSaw: "",
+		//recurringEvent: "",
+		//whatHappenedDetails: "",
+		//timeOfDayHour: 1,
+		//timeOfDayMinutes: 0,
+		//ampm: "PM",
+		//mapAddress: "3510 S MICHIGAN AVE"
+	}
+	
+	// Display & Format Data //
+	function displayData(data) {
+		$("#output").html(""); // clear output
+	
+		var row = {};
+		$.each(data, function(key, row) {
+			var displayText = JSON.stringify(key) + ": " + JSON.stringify(row);
+			
+			var displayRowHtml = $("<span>");
+			displayRowHtml.text(displayText);
+			
+			$("#output")
+				.append(displayRowHtml)
+				.append("<br/>");
+		});
+	}
+	
+	// Post Data (on button click) //
+	function postData() {
+		$("#messages").html("<span><i>Posting data (attempting to create tip)...</i></span>");
+	
+		// perform web request (POST)
+		var paramBody = apiRequestParameters;
+		paramBody.iSaw = $("#description").val();
+		
+		$.post(apiRequestUrl, paramBody, function(data) {
+			if (data) {
+				displayData(data);
+			}
+		})
+		.done(function() {
+			$("#messages").html("<span><i>Finished POST request! (see response below)</i></span>");
+		})
+		.fail(function(jqXHR, textStatus, errorThrown) {
+			$("#messages").html("<span style=\"color: red;\"><b>ERROR:</b> An error has occurred while processing the request.<br/><br/>(" + textStatus + ") " + jqXHR.status + " " +  jqXHR.responseText + " " + errorThrown + "</br><br/><i>(Please follow instructions in 'HOW_TO.txt' or debug via JavaScript Messages Console)</i></span>");
+		});
+	}
+	</script>
+</head>
+<body>
+
+<!-- Status of requests -->
+<div id="messages" style="margin-bottom:20px;"></div>
+
+<!-- Data is displayed inside of the "#output" HTML element -->
+<div id="output"></div><br/>
+
+<b>Description (iSaw)</b><br/>
+<input type="text" id="description" name="description" maxlength=1000 />
+
+<input type="button" id="submit" name="submit" onclick="postData();" value="Create Tip" />
+
+
+<!-- allows submit when enter key is pressed -->
+<script type="text/javascript">
+$("input[type='text']").keypress(function(e) {
+	if (e.which == 13 && !e.shiftKey) {
+		e.preventDefault();
+		jQuery(this).blur();
+		jQuery('#submit').focus().click();
+		
+		return false;
+	}
+});
+</script>
+
+
+</body>
+</html>

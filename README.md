@@ -63,4 +63,16 @@ There are other types of parameters that you can add to the 3rd argument of the 
 To add more parameters, simply add a `&` to the end of the 3rd argument in between `""`, type the parameter name and an `=` sign, then add the value of the parameter. For example ```"apiToken=INSERTAPITOKENHERE&recurringEvent=yes&whatHappenedDetails=I saw a bad guy"``` 
 
 # Challenge
-Think about how you can use the CLEARPath API to make a website/web application which helps the community around you! For a start - I have included a simple starter application that allows you to access the data from the tip.chicagopolice.org/CLEARPath API database and send data to the database.
+Think about how you can use the CLEARPath API to make a website/web application which helps the community around you! For a start - I have included a simple starter application that allows you to access the data from the CLEARPath API database and send data to the database.
+
+## Directions
+1. Download the ZIP file for the "youthideashack" from this Github page (there's a Download ZIP button in the top right corner)
+2. Save the ZIP file & extract its contents
+
+
+### Mac
+1. Download [NodeJS](https://nodejs.org/dist/v4.2.3/node-v4.2.3.pkg) to your machine
+
+### PC
+1. Download Mongoose to the directory in which you saved the "youthideashack" project above
+2. 
