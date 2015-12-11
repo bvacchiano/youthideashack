@@ -66,7 +66,7 @@ To add more parameters, simply add a `&` to the end of the 3rd argument in betwe
 Think about how you can use the CLEARPath API to make a website/web application which helps the community around you! For a start - I have included a simple starter application that allows you to access the data from the CLEARPath API database and send data to the database.
 
 ## Starter Application Download/Install Directions
-1. Download the ZIP file for the "youthideashack" from this Github page (there's a Download ZIP button in the top right corner)
+1. Download the ZIP file for the "youthideashack" project from this Github page (there's a Download ZIP button in the top right corner)
 2. Save the ZIP file & extract its contents
 
 
