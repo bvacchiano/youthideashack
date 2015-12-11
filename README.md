@@ -67,11 +67,11 @@ Think about how you can use the CLEARPath API to make a website/web application 
 
 ## Starter Application Download/Install Directions
 1. Download the ZIP file for the "youthideashack" project from this Github page (there's a Download ZIP button in the top right corner)
-2. Save the ZIP file & extract its contents
+2. Save the ZIP file to your machine's desktop & extract its contents
 
 
 ### Mac
-1. Download [NodeJS](https://nodejs.org/en/download/) to your machine's Desktop
+1. Download [Node.js](https://nodejs.org/en/download/)
 2. Open terminal and run command `sudo npm install npm -g`. This will download a package manager that allows you to easily run a simple server. The simple server will help you execute a post command from your local machine / from the web application in the "youthideashack" project.
 3. Download the simple server package ([http-server](https://www.npmjs.com/package/http-server)) by executing the command `npm install http-server -g`
 4. Download Jitsu using command `npm install jitsu -g`
@@ -80,10 +80,20 @@ Think about how you can use the CLEARPath API to make a website/web application 
 7. In the terminal, run command `cd http-server`
 8. Run command `node bin/http-server` from terminal
 9. Navigate to website `http://localhost:8080/index.html` using Safari/Firefox/Chrome
-10. View the sample web app :) The index.html page will display data retrieved (GET) from the CLEARPath API.
+10. View the sample web app :bowtie: The index.html page will display data retrieved (GET) from the CLEARPath API.
 
 **NOTE:** There is a sample website which allows you to send (POST) data to the database using the CLEARPath API. See if you can figure out how to read the code in the post.html file, add your API Token to the file, and post data to the server! *Hint: navigate to `http://localhost:8080/post.html` to see a POST webpage*
 
+#### Stopping/turning off the `http-server`
+To stop the http-server, simply press `CTRL+C` inside your terminal
+
+
 ### PC
-1. Download Mongoose to the directory in which you saved the "youthideashack" project above
-2. 
+1. Download the [Mongoose Embedded HTTP Server](https://www.cesanta.com/products#binary), choose the Windows Executable paclage and save it to your "youthideashack" project folder on your Desktop
+2. Double click on the mongoose-free-6.1 in your "youthideashack" project folder located on your Desktop
+3. View the sample web app :bowtie:. The page displayed is your index.html file located in your "youthideashack" project folder. This page will display data retrieved (GET) from the CLEARPath API's database/datasource.
+
+**NOTE:** There is a sample website which allows you to send (POST) data to the database using the CLEARPath API. See if you can figure out how to read the code in the post.html file, add your API Token to the file, and post data to the server! *Hint: navigate to `http://localhost:8080/post.html` to see a POST webpage*
+
+#### Stopping/turning off the Mongoose Embedded HTTP Server
+To stop the Mongoose Embedded HTTP Server, simply open your task manager and end the task.
