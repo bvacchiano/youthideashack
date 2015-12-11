@@ -48,7 +48,7 @@ Below are the steps to send (POST) a tip to the tip.chicagpolice.org database:
 
 1. Retrieve an API Token from a Chicago Police employee or a Youth Ideas Hack volunteer
 2. Open a terminal (Mac) or Command Prompt (PC)
-3. Type 
+3. Type in the terminal/command prompt
 ```
 	curl --data "apiToken=INSERTAPITOKENHERE&recurringEvent=yes" http://api1.chicagopolice.org/clearpath/api/1.0/tips
 ```
