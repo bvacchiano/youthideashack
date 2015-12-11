@@ -1,4 +1,4 @@
-# youthideashack
+# Youth Ideas Hack - Chicago Police Department
 Simple webserver for running the https://tip.chicagopolice.org/ api (with directions)
 
 # Getting Started
@@ -42,7 +42,7 @@ There are many other pieces of data that you can view from the CLEARPath API. If
 **You can read about all of the other types of data you can retrieve (GET) on the** [CLEARPath API Documentation](http://http://api1.chicagopolice.org/clearpath/documentation/index) **site**
 
 
-## Sending data to tip.chicagopolice.org using the CLEARPath API
+## Sending (POST) data to tip.chicagopolice.org using the CLEARPath API
 To send (POST) data to the tip.chicagopolice.org data source using the CLEARPath API we'll need user our computer's terminal/command prompt. This will allow us to safely and securely access the database and add information to the data source. Unlike the get calls, we unfortunately cannot send data to the database using our web browser and a url. 
 
 Below are the steps to send (POST) a tip to the tip.chicagpolice.org database:
@@ -57,8 +57,7 @@ Below are the steps to send (POST) a tip to the tip.chicagpolice.org database:
 ### Adding even more data to a tip
 There are other types of parameters that you can add to the 3rd argument of the command above to submit more information to your tip. Please review the "Create Crime Tip" section of the [CLEARPath API Documentation](http://http://api1.chicagopolice.org/clearpath/documentation/index) to see other parameters you can add. 
 
-To add more parameters, simply add a `&` to the end of the 3rd argument in between `""`, type the parameter name and an `=` sign, then add the value of the parameter. For example ```"apiToken=INSERTAPITOKENHERE&recurringEvent=yes&whatHappenedDetails=I saw a bad guy"```
-
+To add more parameters, simply add a `&` to the end of the 3rd argument in between `""`, type the parameter name and an `=` sign, then add the value of the parameter. For example ```"apiToken=INSERTAPITOKENHERE&recurringEvent=yes&whatHappenedDetails=I saw a bad guy"``` 
 
 # Challenge
 Think about how you can use the CLEARPath API to make a website/web application which helps the community around you! For a start - I have included a simple starter application that allows you to access the data from the tip.chicagopolice.org/CLEARPath API database and send data to the database.
