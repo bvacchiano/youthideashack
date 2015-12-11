@@ -54,7 +54,7 @@ Below are the steps to send (POST) a tip to the tip.chicagpolice.org database:
 ```
 
 ### Fixing a common curl error
-If you get a curl error `A positional parameter cannot be found that accepts argument`, an easy way to combat that error is to ensure that the correct version of curl is being used in your terminal/command prompt. To do so, type `Remove-item alias:curl` in your terminal/command prompt.
+If you get a curl error `A positional parameter cannot be found that accepts argument`, an easy way to combat that error is to ensure that the correct version of curl is being used in your terminal/command prompt. To do so, type and execute `Remove-item alias:curl` in your terminal/command prompt.
 
 
 ### Adding even more data to a tip
